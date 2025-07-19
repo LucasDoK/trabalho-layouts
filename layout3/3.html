@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee</title>
+  <link rel="stylesheet" href="3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="left">Central do Vendedor | Vender na Shopee | Baixe o App | Siga-nos</div>
+      <div class="right">Notificações | Ajuda | Português - BR | Cadastrar | Entrar</div>
+    </div>
+    <div class="main-header">
+      <div class="logo">Shopee</div>
+      <input type="text" placeholder="Buscar na Shopee" class="search-bar">
+      <div class="cart">🛒</div>
+    </div>
+  </header>
+
+  <section class="promo-title">
+    <h2>DESCOBERTAS DO DIA</h2>
+  </section>
+
+  <main class="product-grid">
+    <script>
+      const produtos = [
+        { nome: "iPhone 11 128gb/64gb Original", preco: "R$1.990,00" },
+        { nome: "Playstation 4 Completo Ps4 slim Novo 1TB", preco: "R$1.779,90" },
+        { nome: "Kit 02 Perfume Masculino Malbec", preco: "R$29,89" },
+        { nome: "PC Completo com SSD | Intel i5, i7 ou AMD", preco: "R$900,00" },
+        { nome: "iPhone 11 64gb novo vitrine original", preco: "R$1.847,00" },
+        { nome: "Playstation 4 - Video game Ps4 1tb com 2 jogos", preco: "R$1.799,00" },
+        { nome: "Caixa de som JBL Boombox 3 180W IP67", preco: "R$2.050,00" },
+        { nome: "Cpu Gamer Barato 17 16gb Ssd 240gb", preco: "R$1.424,99" },
+        { nome: "iPhone 15 PRO MAX 256GB", preco: "R$6.999,00" },
+        { nome: "Videogame Stick 10mil 2 Controles", preco: "R$99,99" },
+        { nome: "Smart TV LED HD 32 Polegadas", preco: "R$987,99" },
+        { nome: "Computador Pc Gamer Completo", preco: "R$989,49" },
+      ];
+
+      produtos.forEach(p => {
+        document.write(`
+          <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="${p.nome}">
+            <div class="title">${p.nome}</div>
+            <div class="frete">FRETE GRÁTIS em até 6x</div>
+            <div class="price">${p.preco}</div>
+          </div>
+        `);
+      });
+    </script>
+  </main>
+
+  <footer class="footer">
+    © 2025 Shopee. Todos os direitos reservados<br>
+    País e região: Singapura | Indonésia | Tailândia | Malásia | Vietnã | Brasil | México | etc.
+  </footer>
+</body>
+</html>
