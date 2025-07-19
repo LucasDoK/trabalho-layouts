@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.painel {
+  flex: 1;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.esquerda {
+  background-color: #007bff;
+}
+
+.direita {
+  background-color: #5bc0f8;
+}
+
+.painel h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.painel img {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.btn {
+  background-color: white;
+  color: #007bff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 25px auto 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.esquerda .btn {
+  color: #007bff;
+}
+
+.direita .btn {
+  color: #5bc0f8;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.painel p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.painel p a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
