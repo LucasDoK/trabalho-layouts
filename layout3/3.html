@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -9,22 +8,22 @@
 </head>
 <body>
   <header class="header">
-    <div class="top-bar">
-      <div class="left">Central do Vendedor | Vender na Shopee | Baixe o App | Siga-nos</div>
-      <div class="right">Notificações | Ajuda | Português - BR | Cadastrar | Entrar</div>
+    <div class="barra-top">
+      <div class="esquerda">Central do Vendedor | Vender na Shopee | Baixe o App | Siga-nos</div>
+      <div class="direita">Notificações | Ajuda | Português - BR | Cadastrar | Entrar</div>
     </div>
     <div class="main-header">
       <div class="logo">Shopee</div>
-      <input type="text" placeholder="Buscar na Shopee" class="search-bar">
-      <div class="cart">🛒</div>
+      <input type="text" placeholder="Buscar na Shopee" class="barra-de-pesquisa">
+      <div class="carrinho">🛒</div>
     </div>
   </header>
 
-  <section class="promo-title">
-    <h2>DESCOBERTAS DO DIA</h2>
+  <section class="promocao">
+    DESCOBERTAS DO DIA
   </section>
-
-  <main class="product-grid">
+  <div class="container">
+  <main class="grid-produtos">
     <script>
       const produtos = [
         { nome: "iPhone 11 128gb/64gb Original", preco: "R$1.990,00" },
@@ -43,8 +42,8 @@
 
       produtos.forEach(p => {
         document.write(`
-          <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="${p.nome}">
+          <div class="produtos-card">
+            <img src="images/imagem_2025-07-19_161357268-removebg-preview.png" alt="${p.nome}">
             <div class="title">${p.nome}</div>
             <div class="frete">FRETE GRÁTIS em até 6x</div>
             <div class="price">${p.preco}</div>
@@ -53,10 +52,11 @@
       });
     </script>
   </main>
-
+  </div>
   <footer class="footer">
     © 2025 Shopee. Todos os direitos reservados<br>
     País e região: Singapura | Indonésia | Tailândia | Malásia | Vietnã | Brasil | México | etc.
   </footer>
 </body>
 </html>
+
