@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -7,56 +8,113 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="header">
-    <div class="barra-top">
+    <div class="top-bar">
       <div class="esquerda">Central do Vendedor | Vender na Shopee | Baixe o App | Siga-nos</div>
       <div class="direita">Notificações | Ajuda | Português - BR | Cadastrar | Entrar</div>
     </div>
     <div class="main-header">
       <div class="logo">Shopee</div>
-      <input type="text" placeholder="Buscar na Shopee" class="barra-de-pesquisa">
+      <input type="text" placeholder="Buscar na Shopee" class="barra-pesquisa">
       <div class="carrinho">🛒</div>
     </div>
   </header>
 
   <section class="promocao">
-    DESCOBERTAS DO DIA
+    <h2>DESCOBERTAS DO DIA</h2>
   </section>
-  <div class="container">
-  <main class="grid-produtos">
-    <script>
-      const produtos = [
-        { nome: "iPhone 11 128gb/64gb Original", preco: "R$1.990,00" },
-        { nome: "Playstation 4 Completo Ps4 slim Novo 1TB", preco: "R$1.779,90" },
-        { nome: "Kit 02 Perfume Masculino Malbec", preco: "R$29,89" },
-        { nome: "PC Completo com SSD | Intel i5, i7 ou AMD", preco: "R$900,00" },
-        { nome: "iPhone 11 64gb novo vitrine original", preco: "R$1.847,00" },
-        { nome: "Playstation 4 - Video game Ps4 1tb com 2 jogos", preco: "R$1.799,00" },
-        { nome: "Caixa de som JBL Boombox 3 180W IP67", preco: "R$2.050,00" },
-        { nome: "Cpu Gamer Barato 17 16gb Ssd 240gb", preco: "R$1.424,99" },
-        { nome: "iPhone 15 PRO MAX 256GB", preco: "R$6.999,00" },
-        { nome: "Videogame Stick 10mil 2 Controles", preco: "R$99,99" },
-        { nome: "Smart TV LED HD 32 Polegadas", preco: "R$987,99" },
-        { nome: "Computador Pc Gamer Completo", preco: "R$989,49" },
-      ];
 
-      produtos.forEach(p => {
-        document.write(`
-          <div class="produtos-card">
-            <img src="images/imagem_2025-07-19_161357268-removebg-preview.png" alt="${p.nome}">
-            <div class="title">${p.nome}</div>
-            <div class="frete">FRETE GRÁTIS em até 6x</div>
-            <div class="price">${p.preco}</div>
-          </div>
-        `);
-      });
-    </script>
+  <main class="produto-grid">
+    <div class="produto-card">
+      <img src="images/iphone_11.png" alt="Produto">
+      <div class="title">iPhone 11 128gb/64gb Original | Celular iPhone...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.990,00</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/ps4.png" alt="Produto">
+      <div class="title">Playstation 4 Completo Ps4 slim Novo 1TB + 2...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/malbec.png" alt="Produto">
+      <div class="title">Kit 02 Perfume Masculino Malbec - Amadeirado,...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/pcgamer.png" alt="Produto">
+      <div class="title">PC Completo com SSD | Intel I5, I7 ou AMD I...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/iphone_11.png" alt="Produto">
+      <div class="title">iPhone 11 64gb novo vitrine original lacrado ...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/ps4.png" alt="Produto">
+      <div class="title">Playstation 4 - Video game Ps4 1tb com 2 con...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/jbl.png" alt="Produto">
+      <div class="title">Caixa de som JBL Boombox 3 180W IP67 - P...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/pcgamer.png" alt="Produto">
+      <div class="title">Cpu Gamer Barato I7 16gb Ssd 240gb + Wifi + ...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/iphone_11.png" alt="Produto">
+      <div class="title">iPhone 15 PRO MAX 256GB - 512GB Novo Lacrado ...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/ps4.png" alt="Produto">
+      <div class="title">Videogame Stick 10mil 2 Controles Pronto P...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/smart_tv.png" alt="Produto">
+      <div class="title">Smart Tv LED HD 32 Polegadas AOC Sistema...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
+
+    <div class="produto-card">
+      <img src="images/pcgamer.png" alt="Produto">
+      <div class="title">Computador Pc Gamer Completo Intel I7 16GB...</div>
+      <div class="frete">FRETE GRÁTIS em até 6x R$ 91</div>
+      <div class="preco">R$1.779,90</div>
+    </div>
   </main>
-  </div>
+
   <footer class="footer">
     © 2025 Shopee. Todos os direitos reservados<br>
     País e região: Singapura | Indonésia | Tailândia | Malásia | Vietnã | Brasil | México | etc.
   </footer>
+
 </body>
 </html>
-
