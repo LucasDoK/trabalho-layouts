@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  color: #888;
+}
+
+main {
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.autor {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #777;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.autor a {
+  color: #777;
+  text-decoration: none;
+}
+
+.texto {
+  text-align: left;
+  font-size: 18px;
+  color: #444;
+}
+
+.texto p {
+  margin-bottom: 24px;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  font-size: 14px;
+  color: #aaa;
+  font-family: 'Helvetica', sans-serif;
+}
