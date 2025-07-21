@@ -120,6 +120,11 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.coluna-direita ul a{
+  color: red;
+  text-decoration: underline;
+}
+
 .coluna-direita ul span {
   font-size: 12px;
   color: #555;
