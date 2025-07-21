@@ -105,8 +105,7 @@ a:hover {
 }
 
 .icones a img {
-  width: 24px;
-  height: 24px;
+  height: 32px;
   margin-right: 8px;
   vertical-align: middle;
 }
@@ -137,4 +136,8 @@ footer {
   font-size: 12px;
   color: #333;
   margin-top: 40px;
+}
+
+.icon-size{
+  height: 32px;
 }
